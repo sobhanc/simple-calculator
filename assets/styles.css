@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rokkitt', serif;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.container {
+    width: 1000px;
+    height: 550px;
+    margin: 20px auto;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.calculator {
+    width: 320px;
+    height: 520px;
+    background-color: #eaedef;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 500px) {
+    .calculator {
+        position: relative;
+        right: 25%;
+    }
+
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    h1, h3 {
+        text-align: center;
+    }
+}
+
+.result {
+    height: 120px;
+}
+
+.history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+
+.output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    position: relative;
+    top: 30px;
+    font-size: 30px;
+}
+
+.keyboard {
+    height: 400px;
+}
+
+.operator, .number, .empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number, .empty {
+    background-color: #eaedef;
+}
+
+.number, .operator {
+    cursor: pointer;
+}
+
+.operator:active, .number:active {
+    font-size: 13px;
+}
+
+.operator:focus, .number:focus, .empty:focus {
+    outline: 0;
+}
+
+button:nth-child(4) {
+    font-size: 20px;
+    background-color: #388E8E;
+}
+
+button:nth-child(8) {
+    font-size: 20px;
+    background-color: #2F4F4F;
+}
+
+button:nth-child(12) {
+    font-size: 20px;
+    background-color: #96CDCD;
+}
+
+button:nth-child(16) {
+    font-size: 20px;
+    background-color: #00EEEE;
+}
+
+button:nth-child(20) {
+    font-size: 20px;
+    background-color: #BBFFFF;
+}
